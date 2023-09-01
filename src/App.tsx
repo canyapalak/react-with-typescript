@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import "./App.css";
+import React from "react";
+
+interface Exercise {
+  name: string;
+  src: string;
+  definition: string;
+}
 
 function App() {
-  const exercises = [
+  const exercises: Exercise[] = [
     {
       name: "Exercise 1",
       src: "/exercise-1",
@@ -57,12 +64,12 @@ function App() {
 
   return (
     <div className="App">
-      <h2 className="App-header">React with Typescript - Exercises</h2>
+      <h2 className="App-header">React with TypeScript - Exercises</h2>
       <div className="exercise-wrapper">
         {exercises.map((exercise) => (
           <div key={exercise.name} className="exercise">
             <p className="exercise-title">
-              <Link to={exercise.src} target="_blank">
+              <Link to={exercise.src} target="_blank" rel="noopener noreferrer">
                 {exercise.name}
               </Link>
             </p>

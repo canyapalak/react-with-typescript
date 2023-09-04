@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import "../App.css";
-import React from "react";
+
 
 interface Exercise {
   id: number,
@@ -8,9 +6,8 @@ interface Exercise {
   src: string;
   definition: string;
 }
-
-function Home() {
-  const exercises: Exercise[] = [
+    
+  export const exercises: Exercise[] = [
     {
       id: 1,
       name: "Exercise 1",
@@ -72,24 +69,3 @@ function Home() {
       definition: "Show a list of items with remove and add function ",
     },
   ];
-
-  return (
-    <div className="App">
-      <h2 className="App-header">React with TypeScript - Exercises</h2>
-      <div className="exercise-wrapper">
-        {exercises.map((exercise) => (
-          <div key={exercise.id} className="exercise">
-            <p className="exercise-title">
-              <Link to={exercise.src} rel="noopener noreferrer">
-                {exercise.name}
-              </Link>
-            </p>
-            <p className="exercise-definition">{exercise.definition}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default Home;

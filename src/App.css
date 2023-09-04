@@ -1,9 +1,9 @@
 .App {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .App-header {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-weight: 600;
 }
 
@@ -19,4 +19,21 @@
 
 .exercise-title {
   margin-right: 10px;
+}
+
+.code-box {
+  padding:1rem;
+  margin: auto;
+  display: inline-block;
+  color: white;
+  background-color: black;
+}
+
+.ex-header {
+  font-weight: 600;
+}
+
+.line {
+  margin-right: 75vh;
+  border-top: dashed 1px;
 }

@@ -38,3 +38,13 @@
   margin-right: 75vh;
   border-top: dashed 1px;
 }
+
+.list-item {
+  display: flex;
+}
+
+.list-name {
+  margin-left: 2rem;
+}
+
+

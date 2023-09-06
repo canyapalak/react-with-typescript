@@ -66,6 +66,6 @@ interface Exercise {
       id: 10,
       name: "Exercise 10",
       src: "/exercise-10",
-      definition: "Show a list of items with remove and add function ",
+      definition: "Show a list of items with remove and add function",
     },
   ];
